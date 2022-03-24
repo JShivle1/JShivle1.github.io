@@ -82,8 +82,7 @@ nav img {
     justify-content: space-between;
     align-items: center;
     width: 600px;
-    height: 90vh;
-    margin: 0 auto;
+    margin: 5em auto;
     max-height: 100%;
     max-width: 100%;
 }
@@ -100,6 +99,24 @@ nav img {
     font-weight: bold;
     color: #4d194d;
     text-align: center;
+}
+
+#projects {
+    text-align: center;
+    padding-top: 2em;
+}
+
+#projects h2 {
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4d194d;
+        text-decoration: overline;
+}
+
+#projects img {
+    margin: 2em 1em;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -129,4 +146,8 @@ nav img {
         font-size: 1em;
     }
 
+    #projects img {
+        width: 225px;
+        height: 225px;
+    }
 }
