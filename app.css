@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom CSS */
+
+body {
+    font-family: 'Glegoo', serif;
+    background-color: #e2eafc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #355C7D;
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    padding: 1em;
+}
+
+nav h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f0efeb;
+}
+
+nav img {
+    width: 30px;
+    height: 30px;
+    padding-left: 2em;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 90vh;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#intro p {
+    font-size: 1.2em;
+    line-height: 2;
+    font-weight: bold;
+    color: #4d194d;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+
+    nav h1 {
+        font-size: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    nav img {
+        width: 25px;
+        height: 25px;
+        padding-left: .5em;
+    }
+
+    #intro {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #intro img {
+        margin-bottom: 2em;
+    }
+
+    #intro p {
+        font-size: 1em;
+    }
+
+}
